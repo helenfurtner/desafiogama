@@ -18,7 +18,7 @@ body {
   margin: 0;
   font-family: 'Noto Sans JP', sans-serif;
   font-weight: 300;
-  font-size: 18px;
+  font-size: 16px;
   color: #555;
 }
 
@@ -42,9 +42,18 @@ a {
   box-sizing: border-box;
 }
 
+p{
+    margin-bottom: 30px;
+}
+
 section{
     padding: 30px 0;
-    background-color: black
+    background-color: #f2f2f2;
+}
+
+.bg-purple{
+    background-color: #9d3b96;
+    padding-bottom: 15px;
 }
 
 .container {
@@ -64,25 +73,135 @@ section{
     display: flex;
     justify-content:center;
     align-items: center;
-    padding: 3% 5%
+    padding: 5px 5%
 }
 
 .showcase{
     order: 2
 }
 
+h1{
+    font-size: 35px;
+    line-height: 35px;
+    z-index: 999;
+    position: relative
+}
+
+.showcase img{
+    margin-top: -20%;
+    z-index: 99;
+}
+
 .contact_box{
-    background-color: #f2f2f2;
+    background-image: url('../images/fundo.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
     order: 1
 }
 
 .box1, .box2, .box3, .box4{
-    width: 25%;
+    width: 100%;
+    margin-bottom: 50px;
     color: #f9f9f9;
     display: flex;
     justify-content: center;
-    align-items: center
+    align-items: center;
+    text-align: center;
 }
+
+.box1 p, .box2 p, .box3 p, .box4 p{
+    font-size: 16px;
+    margin: 0 auto;
+}
+
+.paper{
+    margin: 0 auto;
+    width: 100%;
+    color: rgba(0, 0, 0, 0.87);
+    transition: box-shadow 300ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+    background-color: #fff;
+    box-shadow: 0px 2px 1px -1px rgb(0 0 0 / 20%), 0px 1px 1px 0px rgb(0 0 0 / 14%), 0px 1px 3px 0px rgb(0 0 0 / 12%);
+    border-radius: 4px;
+    padding: 25px 8%;
+}
+
+.paper_head h2{
+    color: #E31C58;
+    font-size: 30px;
+    line-height: 30px;
+}
+
+.paper .BtnOutline{
+    width: 100%;
+}
+
+.paper-bottom{
+    margin-top: 30px;
+}
+
+.copy{
+    width: 100%;
+    padding-top: 10px;
+    border-top: 1px solid #c14cb9;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.copy small{
+    color: #ff89f7;
+    font-size: 12px;
+}
+
+/* Form */
+form .box-form > label, form .box-form > input{
+    width: 100%;
+}
+
+.box-form{
+    margin-bottom: 10px;
+}
+
+.box-form > input{
+    margin-top: 5px;
+    padding: 10px;
+    border: 1px solid #cecdcd;
+    border-radius: 3px;
+}
+
+.btn-send{
+    border: 1px solid #E31C58;
+    background-color: #E31C58;
+    padding: 10px 25px;
+    border-radius: 5px;
+    text-transform: uppercase;
+    font-weight: 300;
+    color: #fff;
+    cursor: pointer;
+}
+
+.btn-send:hover{
+    border: 1px solid #d81b54;
+    background-color: #d81b54;
+    transition: 1s;
+}
+
+.svg-icon {
+   width: 3em;
+   height: 3em;
+}
+  
+.svg-icon path,
+.svg-icon polygon,
+.svg-icon rect {
+   fill: #ff89f7;
+}
+  
+.svg-icon circle {
+   stroke: #ff89f7;
+   stroke-width: 1;
+}
+
 
 @media (min-width: 768px){
     .container {
@@ -99,6 +218,10 @@ section{
     .contact_box{
         order: 2
     }
+
+    .box1, .box2, .box3, .box4{
+        width: 25%;
+    }
 }
 
 @media (min-width: 576px){
@@ -108,7 +231,7 @@ section{
 }
 
 
-@media (min-width: 1200px){
+@media (min-width: 990px){
     .container {
         max-width: 1340px;
     }
@@ -123,7 +246,7 @@ section{
     }
 
     .showcase img{
-        margin-top: -80%;
+        margin-top: -60%;
         z-index: 99;
     }
 
