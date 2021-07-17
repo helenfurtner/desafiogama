@@ -249,7 +249,10 @@ form .box-form > label, form .box-form > input{
         margin-top: -60%;
         z-index: 99;
     }
+    
+}
 
+@media screen and (min-width: 1200px){
     .showcase, .contact_box{
         width: 49.5%;
     }

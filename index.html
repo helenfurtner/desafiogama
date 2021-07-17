@@ -37,7 +37,7 @@
                                     para utilizar na nossa loja até o final do ano.
                                 </p>
                             </div>
-                            <form>
+                            <form method="post" id="formulario">
                                 <div class="box-form">
                                     <input type="text" id="nome" name="nome" placeholder="Seu nome">
                                 </div>
@@ -45,7 +45,9 @@
                                     <input type="email" id="email" name="email" placeholder="Seu melhor e-mail">
                                 </div><br>
                                 <input type="submit" class="btn-send" value="Cadastrar!">
-                            </form>
+                            </form><br/>
+
+                            <p id="resposta"></p>
                         </div>
                     </div>
                 </div>
@@ -95,6 +97,7 @@
         </main>
         
         
+        <script src="assets/js/form.js" async defer></script>
         <script src="assets/js/main.js" async defer></script>
     </body>
 </html>
